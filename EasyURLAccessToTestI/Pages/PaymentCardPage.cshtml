@@ -1,0 +1,34 @@
+﻿@page
+@model EasyURLAccessToTestI.Pages.PaymentCardPageModel
+@{
+    ViewData["Title"] = "Payment Cards";
+}
+
+<html lang="en">
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+    <div class="text-center">
+        <h1 class="display-4">Payment Cards</h1>
+
+        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Payment Provider
+        </a>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <a class="dropdown-item" href="/PaymentProviderCyberSource">CyberSource</a>
+            <a class="dropdown-item" href="/PaymentProviderWorldPay">WorldPay</a>
+        </div>
+
+        <h3>Homepage</h3>
+        <button class="btn btn-success" onclick="document.location='/index'"> Test I Pages </button>
+    </div>
+</body>
+</html>

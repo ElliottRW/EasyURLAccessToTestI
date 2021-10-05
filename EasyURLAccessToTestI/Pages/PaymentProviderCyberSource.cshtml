@@ -1,0 +1,41 @@
+﻿@page
+@model EasyURLAccessToTestI.Pages.PaymentProviderCyberSourceModel
+@{
+    ViewData["Title"] = "CyberSource";
+}
+
+<html lang="en">
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+<div class="text-center">
+    <h1 class="display-4">CyberSource</h1>
+
+    <br/>
+    <h3>3DS2 Frictionless Success </h3>
+    <h5>Name on Card: ThreeDSecureTwoFrictionless</h5>
+    <h5>Card Number: 4456530000001005</h5>
+    <h5>Expiry Date: 01/24</h5>   
+    
+    <br/>
+    <h3>3DS2 Challenge Success </h3>
+    <h5>Name on Card: ThreeDSecureTwoSuccess</h5>
+    <h5>Card Number: 4456530000001096</h5>
+    <h5>Expiry Date: 01/24</h5>
+
+    <br/>
+    <h3>Homepage</h3>
+    <button class="btn btn-success" onclick="document.location='/index'"> Test I Pages </button>
+    <h3>Payment Cards</h3>
+    <button class="btn btn-success" onclick="document.location='/paymentcardpage'"> Payment Cards </button>
+</div>
+</body>
+</html>

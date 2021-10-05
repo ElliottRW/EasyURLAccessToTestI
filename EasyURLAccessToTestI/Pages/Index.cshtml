@@ -1,0 +1,45 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Test I Pages";
+}
+
+<html lang="en">
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+    <div class="text-center">
+        <h1 class="display-4">Test I Pages</h1>
+        
+        <h3>Main Booking Pages</h3>
+        <button title="Jet2 Holidays Main Booking Pages" class="btn btn-danger" onclick=" window.open('http://testi.jet2holidays.com/', '_blank'); return false;"> Jet2 Holidays </button>
+        <button title="Jet2.com Main Booking Pages" class="btn btn-primary" onclick=" window.open('https://testi.jet2.com/', '_blank'); return false;"> Jet2.com </button>
+        
+        <br/>
+        
+        <h3>Back Office (Open in IE only)</h3>
+        <button title="Jet2 Holidays Back Office" class="btn btn-danger" onclick=" window.open('https://testiadmin.jet2holidays.com/backoffice/Default.aspx', '_blank'); return false;"> Jet2 Holidays Back Office </button>
+        <button title="Jet2.com Back Office" class="btn btn-primary" onclick=" window.open('https://testi-reservations.jet2.com/Jet2.Reservations.Web.CallCentre/Main.aspx', '_blank'); return false;"> Jet2.com Back Office </button>
+        
+        <br/>
+        
+        <h3>AdHoc Websites</h3>
+        <button title="Jet2 Holidays Trade" class="btn btn-danger" onclick=" window.open('https://testitrade.jet2holidays.com/tslogin?ReturnUrl=%2f', '_blank'); return false;"> Jet2 Holidays Trade </button>
+        <button title="Jet2.com Group Bookings" class="btn btn-primary" onclick=" window.open('https://testi-reservations.jet2.com/groups', '_blank'); return false;"> Jet2.com Group Bookings </button>
+        
+        <br/>
+        <br/>
+        <br/>
+
+        <h3>Payment Cards</h3>
+        <button class="btn btn-success" onclick="document.location='/paymentcardpage'"> Payment Cards </button>
+    </div>
+</body>
+</html>
